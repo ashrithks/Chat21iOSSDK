@@ -1,0 +1,6 @@
+framework module Pods_chat21_ios_sdk_framework {
+  umbrella header "Pods-chat21-ios-sdk-framework-umbrella.h"
+
+  export *
+  module * { export * }
+}
