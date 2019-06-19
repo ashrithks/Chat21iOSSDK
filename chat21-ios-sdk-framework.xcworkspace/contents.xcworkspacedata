@@ -2,10 +2,10 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:chat21-ios-sdk-framework.xcodeproj">
+      location = "group:/Users/andreasponziello/Projects/Chat/chat21-ios-sdk-framework/chat21.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:Chat21iOSSDK.podspec">
+      location = "group:/Users/andreasponziello/Projects/Chat/chat21-ios-sdk-framework/Chat21.podspec">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">

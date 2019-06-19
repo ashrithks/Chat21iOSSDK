@@ -3,12 +3,12 @@ Pod::Spec.new do |s|
 # 1
 s.platform = :ios
 s.ios.deployment_target = '10.0'
-s.name = "Chat21iOSSDK"
-s.summary = "Chat21iOSSDK lets a user select an ice cream flavor."
+s.name = "Chat21"
+s.summary = "Chat21 lets a user select an ice cream flavor."
 s.requires_arc = true
 
 # 2
-s.version = "0.8"
+s.version = "0.8.2"
 
 # 3
 s.license = { :type => "MIT", :file => "LICENSE" }
@@ -34,10 +34,10 @@ s.dependency 'Firebase/Messaging'
 s.dependency 'Firebase/Storage'
 
 # 8
-s.source_files  = "chat21-ios-sdk-framework/**/*.{h,m}"
+s.source_files  = "chat21/**/*.{h,m}"
 
 # 9
-s.public_header_files = 'chat21-ios-sdk-framework/**/*.h'
+s.public_header_files = 'chat21/**/*.h'
 
 
 end
