@@ -8,6 +8,7 @@
 
 #import "ChatConnectionStatusHandler.h"
 #import <libkern/OSAtomic.h>
+#import "FirebaseDatabase/FIRDatabaseReference.h"
 
 @implementation ChatConnectionStatusHandler
 

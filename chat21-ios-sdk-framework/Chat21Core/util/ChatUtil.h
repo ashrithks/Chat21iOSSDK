@@ -9,12 +9,11 @@
 #import <Foundation/Foundation.h>
 
 @import UIKit;
-@class Firebase;
+
 @class ChatNotificationView;
 @class ChatUser;
 @class ChatDiskImageCache;
-
-@import Firebase;
+@class FIRDatabaseReference;
 
 @interface ChatUtil : NSObject
 

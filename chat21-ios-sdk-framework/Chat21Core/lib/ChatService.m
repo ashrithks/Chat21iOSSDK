@@ -9,6 +9,8 @@
 #import "ChatService.h"
 #import "ChatConversation.h"
 #import "ChatManager.h"
+#import "FirebaseDatabase/FIRDataSnapshot.h"
+#import "FirebaseAuth/FIRUser.h"
 
 @implementation ChatService
 

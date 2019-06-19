@@ -7,6 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import "FirebaseDatabase/FIRDataSnapshot.h"
+#import "FirebaseDatabase/FIRDatabaseReference.h"
+
+@class FDataSnapshot;
 @class ChatMessageMetadata;
 
 static int const MSG_STATUS_FAILED = -100;
@@ -52,12 +57,6 @@ static NSString* const MSG_FIELD_METADATA = @"metadata";
 static NSString* const MSG_METADATA_ATTACHMENT_SRC = @"src";
 static NSString* const MSG_METADATA_IMAGE_WIDTH = @"width";
 static NSString* const MSG_METADATA_IMAGE_HEIGHT = @"height";
-
-@import Firebase;
-#import <UIKit/UIKit.h>
-
-//@class Firebase;
-@class FDataSnapshot;
 
 @interface ChatMessage : NSObject// <JSQMessageData>
 

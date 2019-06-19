@@ -6,9 +6,9 @@
 //
 
 #import "FirebaseCustomAuthHelper.h"
-//#import <Firebase/Firebase.h>
+#import "FirebaseDatabase/FIRDatabaseQuery.h"
 
-@import Firebase;
+@class FIRDatabaseReference;
 
 @implementation FirebaseCustomAuthHelper
 

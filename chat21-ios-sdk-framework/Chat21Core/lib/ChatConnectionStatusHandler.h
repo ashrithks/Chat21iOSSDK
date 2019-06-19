@@ -8,8 +8,9 @@
 
 #import <Foundation/Foundation.h>
 #import "ChatEventType.h"
+#import "FirebaseDatabase/FIRDatabaseQuery.h"
 
-@import Firebase;
+@class FIRDatabaseReference;
 
 @interface ChatConnectionStatusHandler : NSObject
 

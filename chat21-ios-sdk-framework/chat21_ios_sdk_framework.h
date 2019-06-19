@@ -16,5 +16,5 @@ FOUNDATION_EXPORT const unsigned char chat21_ios_sdk_frameworkVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <chat21_ios_sdk_framework/PublicHeader.h>
 
-//#import <chat21_ios_sdk_framework/ChatManager.h>
-//#import <chat21_ios_sdk_framework/ChatAuth.h>
+#import <ChatManager.h>
+#import <ChatAuth.h>

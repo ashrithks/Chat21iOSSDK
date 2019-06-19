@@ -9,12 +9,12 @@
 #import <Foundation/Foundation.h>
 #import "ChatEventType.h"
 #import <UIKit/UIKit.h>
-
-@import Firebase;
+#import "FirebaseDatabase/FIRDatabaseQuery.h"
 
 @class FAuthData;
 @class FirebaseCustomAuthHelper;
 @class Firebase;
+@class FIRDatabaseReference;
 @class ChatUser;
 @class ChatGroup;
 @class ChatMessage;

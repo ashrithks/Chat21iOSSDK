@@ -27,8 +27,9 @@ static NSString* const CONV_CHANNEL_TYPE_KEY = @"channel_type";
 static NSString* const CONV_STATUS_KEY = @"status";
 static NSString* const CONV_ATTRIBUTES_KEY = @"attributes";
 
-@import Firebase;
 @class ChatUser;
+@class FIRDatabaseReference;
+@class FIRDataSnapshot;
 
 //@class Firebase;
 //@class FDataSnapshot;

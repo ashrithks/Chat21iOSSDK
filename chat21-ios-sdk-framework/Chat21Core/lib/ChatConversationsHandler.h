@@ -8,11 +8,11 @@
 #import <Foundation/Foundation.h>
 //#import "SHPConversationsViewDelegate.h"
 #import "ChatEventType.h"
-
-@import Firebase;
+#import "FirebaseDatabase/FIRDatabaseQuery.h"
 
 @class ChatUser;
 @class ChatConversation;
+@class FIRDatabaseReference;
 
 @interface ChatConversationsHandler : NSObject
 

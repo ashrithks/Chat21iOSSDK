@@ -9,11 +9,11 @@
 #import "ChatConversationsHandler.h"
 #import "ChatUtil.h"
 #import "ChatConversation.h"
-//#import "SHPConversationsViewDelegate.h"
 #import "ChatDB.h"
 #import "ChatManager.h"
 #import "ChatUser.h"
 #import <libkern/OSAtomic.h>
+#import "FirebaseDatabase/FIRDatabase.h"
 
 @interface ChatConversationsHandler () {
     dispatch_queue_t serialConversationsMemoryQueue;

@@ -7,8 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "FirebaseDatabase/FIRDataSnapshot.h"
+#import "FirebaseAuth/FIRAuth.h"
+#import "FirebaseStorage/FirebaseStorage.h"
 
-@import Firebase;
 @import UIKit;
 
 @class ChatConversationHandler;

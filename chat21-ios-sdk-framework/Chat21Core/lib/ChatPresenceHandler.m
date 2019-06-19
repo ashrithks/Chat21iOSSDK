@@ -10,8 +10,8 @@
 #import "ChatUtil.h"
 #import "ChatUser.h"
 #import "ChatManager.h"
-
-@import Firebase;
+#import "FirebaseDatabase/FIRDatabaseReference.h"
+#import "FirebaseMessaging/FirebaseMessaging.h"
 
 @implementation ChatPresenceHandler
 

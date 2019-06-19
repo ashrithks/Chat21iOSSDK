@@ -17,6 +17,8 @@
 #import <libkern/OSAtomic.h>
 #import "ChatMessageMetadata.h"
 #import "ChatImageDownloadManager.h"
+//#import "FirebaseAuth/FIRAuth.h"
+#import "FirebaseAuth/FIRUser.h"
 
 @interface ChatConversationHandler () {
     dispatch_queue_t serialMessagesMemoryQueue;

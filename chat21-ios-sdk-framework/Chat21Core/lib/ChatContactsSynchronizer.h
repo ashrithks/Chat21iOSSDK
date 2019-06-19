@@ -8,9 +8,10 @@
 
 #import <Foundation/Foundation.h>
 #import "ChatSynchDelegate.h"
+#import "FirebaseDatabase/FIRDatabaseQuery.h"
 
-@import Firebase;
 @class ChatUser;
+@class FIRDatabaseReference;
 
 @interface ChatContactsSynchronizer : NSObject
 

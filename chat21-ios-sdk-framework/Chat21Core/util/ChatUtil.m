@@ -7,13 +7,13 @@
 //
 
 #import "ChatUtil.h"
-#import <Firebase/Firebase.h>
 #import "ChatConversation.h"
 #import "ChatManager.h"
-//#import "NotificationAlertView.h"
 #import "ChatConversationsVC.h"
 #import "ChatLocal.h"
 #import "ChatDiskImageCache.h"
+#import "FirebaseDatabase/FIRDatabaseReference.h"
+//#import "FirebaseDatabase/FIRDatabase.h"
 
 @implementation ChatUtil
 
@@ -31,14 +31,12 @@
     return conversation_path;
 }
 
-//+(Firebase *)conversationMessagesRef:(NSString *)conversationId settings:(NSDictionary *)settings {
 +(FIRDatabaseReference *)conversationMessagesRef:(NSString *)recipient_id {
     // path: apps/{tenant}/messages/{conversationId}
     ChatManager *chat = [ChatManager getInstance];
     NSString *appid = chat.tenant;
     NSString *me = chat.loggedUser.userId;
     NSString *firebase_conversation_messages_ref = [[NSString alloc] initWithFormat:@"apps/%@/users/%@/messages/%@", appid, me, recipient_id];
-//    NSLog(@"##### firebase_conversation_messages_ref: %@", firebase_conversation_messages_ref);
     FIRDatabaseReference *rootRef = [[FIRDatabase database] reference];
     FIRDatabaseReference *messagesRef = [rootRef child:firebase_conversation_messages_ref];
     return messagesRef;
@@ -63,15 +61,6 @@
     return [ChatUtil sanitizedNode:userId];
 }
 
-//+(NSString *)buildConversationsReferenceWithTenant:(NSString *)tenant username:(NSString *)user_id baseFirebaseRef:(NSString *)baseFirebaseRef {
-//    NSString *tenant_user_sender = [ChatUtil usernameOnTenant:tenant username:user_id];
-//    NSLog(@"tenant-user-sender-id: %@", tenant_user_sender);
-//    
-//    NSString *firebase_conversations_ref = [baseFirebaseRef stringByAppendingFormat:@"/tenantUsers/%@/conversations", tenant_user_sender];
-//    NSLog(@"buildConversationsReferenceWithTenant > firebase_conversations_ref: %@", firebase_conversations_ref);
-//    return firebase_conversations_ref;
-//}
-
 +(NSString *)conversationsPathForUserId:(NSString *)user_id {
     // path: apps/{tenant}/users/{userId}/conversations
     NSString *tenant = [ChatManager getInstance].tenant;
@@ -86,17 +75,8 @@
     return conversations_path;
 }
 
-// +(FIRDatabaseReference *)groupsRefWithBase:(NSString *)firebasePath {
-//     FIRDatabaseReference *rootRef = [[FIRDatabase database] reference];
-//     NSString *groups_path = [ChatUtil groupsPath];
-//     FIRDatabaseReference *firebase_groups_ref = [rootRef child:groups_path];
-//     return firebase_groups_ref;
-// }
-
 +(NSString *)mainGroupsPath {
     NSString *tenant = [ChatManager getInstance].tenant;
-//    NSString *userid = [ChatManager getSharedInstance].loggedUser.userId;
-    //NSString *path = [[NSString alloc] initWithFormat:@"/apps/%@/users/%@/groups", tenant, userid];
     NSString *path = [[NSString alloc] initWithFormat:@"/apps/%@/groups", tenant];
     return path;
 }
@@ -120,26 +100,6 @@
     NSString *contact_path = [[NSString alloc] initWithFormat:@"%@/%@", contacts_path, userid];
     return contact_path;
 }
-
-//+(void)moveToConversationViewWithUser:(ChatUser *)user orGroup:(NSString *)groupid sendMessage:(NSString *)message attributes:(NSDictionary *)attributes {
-//    int chat_tab_index = [HelloApplicationContext tabIndexByName:@"ChatController"];
-//    NSLog(@"processRemoteNotification: messages_tab_index %d", chat_tab_index);
-//    // move to the converstations tab
-//    if (chat_tab_index >= 0) {
-//        UIWindow *window = [[[UIApplication sharedApplication] delegate] window];
-//        UITabBarController *tabController = (UITabBarController *)window.rootViewController;
-//        NSLog(@"Current tab bar controller selectedIndex: %lu", (unsigned long)tabController.selectedIndex);
-//        NSArray *controllers = [tabController viewControllers];
-//        UIViewController *currentVc = [controllers objectAtIndex:tabController.selectedIndex];
-//        [currentVc dismissViewControllerAnimated:NO completion:nil];
-//        ChatRootNC *nc = [controllers objectAtIndex:chat_tab_index];
-//        NSLog(@"openConversationWithRecipient:%@ orGroup: %@ sendText:%@", user.userId, groupid, message);
-//        tabController.selectedIndex = chat_tab_index;
-//        [nc openConversationWithUser:user orGroup:groupid sendMessage:message attributes:attributes];
-//    } else {
-//        NSLog(@"No Chat Tab configured");
-//    }
-//}
 
 // at creation time from array (memory, UI) to dictionary (firebase)
 +(NSMutableDictionary *)groupMembersAsDictionary:(NSArray *)membersArray {

@@ -5,6 +5,9 @@
       location = "group:chat21-ios-sdk-framework.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:Chat21iOSSDK.podspec">
+   </FileRef>
+   <FileRef
       location = "group:Pods/Pods.xcodeproj">
    </FileRef>
 </Workspace>

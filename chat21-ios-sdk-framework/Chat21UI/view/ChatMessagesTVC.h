@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "QBPopupMenu.h"
-#import "NYTPhotosViewController.h"
+//#import "NYTPhotosViewController.h"
 
 
 @class ChatMessagesVC;
