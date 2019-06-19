@@ -39,4 +39,5 @@ s.source_files  = "chat21-ios-sdk-framework/**/*.{h,m}"
 # 9
 s.public_header_files = 'chat21-ios-sdk-framework/**/*.h'
 
+
 end
