@@ -27,7 +27,6 @@
 #import "ChatService.h"
 #import "ChatDiskImageCache.h"
 #import "FirebaseMessaging/FirebaseMessaging.h"
-#import "chat21_ios_sdk_framework.h"
 
 static ChatManager *sharedInstance = nil;
 
