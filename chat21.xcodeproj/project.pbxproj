@@ -210,7 +210,7 @@
 		B2B2032622B96BB2001641C4 /* ChatManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B2B2026122B96BB2001641C4 /* ChatManager.m */; };
 		B2B4FD2D22B6CADA00C1D255 /* chat21.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2B4FD2322B6CADA00C1D255 /* chat21.framework */; };
 		B2B4FD3222B6CADA00C1D255 /* chat21_ios_sdk_frameworkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B2B4FD3122B6CADA00C1D255 /* chat21_ios_sdk_frameworkTests.m */; };
-		B2B4FD3422B6CADA00C1D255 /* chat21_ios_sdk_framework.h in Headers */ = {isa = PBXBuildFile; fileRef = B2B4FD2622B6CADA00C1D255 /* chat21_ios_sdk_framework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B2B4FD3422B6CADA00C1D255 /* Chat21.h in Headers */ = {isa = PBXBuildFile; fileRef = B2B4FD2622B6CADA00C1D255 /* Chat21.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -430,7 +430,7 @@
 		B2B2026022B96BB2001641C4 /* ChatDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatDB.h; sourceTree = "<group>"; };
 		B2B2026122B96BB2001641C4 /* ChatManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatManager.m; sourceTree = "<group>"; };
 		B2B4FD2322B6CADA00C1D255 /* chat21.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = chat21.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B2B4FD2622B6CADA00C1D255 /* chat21_ios_sdk_framework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = chat21_ios_sdk_framework.h; sourceTree = "<group>"; };
+		B2B4FD2622B6CADA00C1D255 /* Chat21.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Chat21.h; sourceTree = "<group>"; };
 		B2B4FD2722B6CADA00C1D255 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B2B4FD2C22B6CADA00C1D255 /* chat21Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = chat21Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2B4FD3122B6CADA00C1D255 /* chat21_ios_sdk_frameworkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = chat21_ios_sdk_frameworkTests.m; sourceTree = "<group>"; };
@@ -815,7 +815,7 @@
 			children = (
 				B2B2022122B96BB2001641C4 /* Chat21Core */,
 				B2B2018B22B96BB2001641C4 /* Chat21UI */,
-				B2B4FD2622B6CADA00C1D255 /* chat21_ios_sdk_framework.h */,
+				B2B4FD2622B6CADA00C1D255 /* Chat21.h */,
 				B2B4FD2722B6CADA00C1D255 /* Info.plist */,
 				B2B2018522B963BF001641C4 /* TestClass.h */,
 				B2B2018622B963BF001641C4 /* TestClass.m */,
@@ -899,7 +899,7 @@
 				B2B2026A22B96BB2001641C4 /* ChatLocal.h in Headers */,
 				B2B2031522B96BB2001641C4 /* ChatGroupsSubscriber.h in Headers */,
 				B2B2029922B96BB2001641C4 /* QBPlasticPopupMenu.h in Headers */,
-				B2B4FD3422B6CADA00C1D255 /* chat21_ios_sdk_framework.h in Headers */,
+				B2B4FD3422B6CADA00C1D255 /* Chat21.h in Headers */,
 				B2B202FA22B96BB2001641C4 /* ChatDiskImageCache.h in Headers */,
 				B2B202EA22B96BB2001641C4 /* ChatImageMessageLeftCell.h in Headers */,
 				B2B202EC22B96BB2001641C4 /* ChatUIManager.h in Headers */,
