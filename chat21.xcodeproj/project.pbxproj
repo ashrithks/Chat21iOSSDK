@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8965A2591F15F5F489F76BDF /* libPods-chat21.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B1D635798BDBB70EDC94654E /* libPods-chat21.a */; };
-		B2B2018422B95F17001641C4 /* Chat21iOSSDK.podspec in Resources */ = {isa = PBXBuildFile; fileRef = B2B2018322B95F17001641C4 /* Chat21iOSSDK.podspec */; };
+		B268664522BAC42F002D2400 /* Chat21.podspec in Resources */ = {isa = PBXBuildFile; fileRef = B268664422BAC42F002D2400 /* Chat21.podspec */; };
 		B2B2018722B963BF001641C4 /* TestClass.h in Headers */ = {isa = PBXBuildFile; fileRef = B2B2018522B963BF001641C4 /* TestClass.h */; };
 		B2B2018822B963BF001641C4 /* TestClass.m in Sources */ = {isa = PBXBuildFile; fileRef = B2B2018622B963BF001641C4 /* TestClass.m */; };
 		B2B2026222B96BB2001641C4 /* dm_conversation_cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2B2018D22B96BB2001641C4 /* dm_conversation_cell.xib */; };
@@ -227,7 +227,7 @@
 		60D22D3DC61A1F3A60E4D1D1 /* Pods-chat21-ios-sdk-framework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chat21-ios-sdk-framework.debug.xcconfig"; path = "Pods/Target Support Files/Pods-chat21-ios-sdk-framework/Pods-chat21-ios-sdk-framework.debug.xcconfig"; sourceTree = "<group>"; };
 		84E3B1FF4DB79C139AD3DFDC /* Pods-chat21-ios-sdk-framework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chat21-ios-sdk-framework.release.xcconfig"; path = "Pods/Target Support Files/Pods-chat21-ios-sdk-framework/Pods-chat21-ios-sdk-framework.release.xcconfig"; sourceTree = "<group>"; };
 		B1D635798BDBB70EDC94654E /* libPods-chat21.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-chat21.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B2B2018322B95F17001641C4 /* Chat21iOSSDK.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Chat21iOSSDK.podspec; sourceTree = "<group>"; };
+		B268664422BAC42F002D2400 /* Chat21.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Chat21.podspec; sourceTree = SOURCE_ROOT; };
 		B2B2018522B963BF001641C4 /* TestClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestClass.h; sourceTree = "<group>"; };
 		B2B2018622B963BF001641C4 /* TestClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestClass.m; sourceTree = "<group>"; };
 		B2B2018D22B96BB2001641C4 /* dm_conversation_cell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = dm_conversation_cell.xib; sourceTree = "<group>"; };
@@ -796,7 +796,6 @@
 		B2B4FD1922B6CADA00C1D255 = {
 			isa = PBXGroup;
 			children = (
-				B2B2018322B95F17001641C4 /* Chat21iOSSDK.podspec */,
 				B2B4FD2522B6CADA00C1D255 /* chat21 */,
 				B2B4FD3022B6CADA00C1D255 /* chat21Tests */,
 				B2B4FD2422B6CADA00C1D255 /* Products */,
@@ -817,6 +816,7 @@
 		B2B4FD2522B6CADA00C1D255 /* chat21 */ = {
 			isa = PBXGroup;
 			children = (
+				B268664422BAC42F002D2400 /* Chat21.podspec */,
 				B2B2022122B96BB2001641C4 /* Chat21Core */,
 				B2B2018B22B96BB2001641C4 /* Chat21UI */,
 				B2B4FD2622B6CADA00C1D255 /* Chat21.h */,
@@ -1017,13 +1017,13 @@
 				B2B2027F22B96BB2001641C4 /* icon_light_profile.png in Resources */,
 				B2B2027422B96BB2001641C4 /* sendbutton.png in Resources */,
 				B2B2029022B96BB2001641C4 /* plus_icon@3x.png in Resources */,
-				B2B2018422B95F17001641C4 /* Chat21iOSSDK.podspec in Resources */,
 				B2B2028E22B96BB2001641C4 /* chat_watch.png in Resources */,
 				B2B202A522B96BB2001641C4 /* inline.caf in Resources */,
 				B2B2027822B96BB2001641C4 /* exiticonbutton.png in Resources */,
 				B2B2026222B96BB2001641C4 /* dm_conversation_cell.xib in Resources */,
 				B2B2028922B96BB2001641C4 /* history_button@2x.png in Resources */,
 				B2B2028622B96BB2001641C4 /* icon_light_cerca.png in Resources */,
+				B268664522BAC42F002D2400 /* Chat21.podspec in Resources */,
 				B2B2027522B96BB2001641C4 /* avatar.png in Resources */,
 				B2B2029622B96BB2001641C4 /* chat_double_check.png in Resources */,
 				B2B2027C22B96BB2001641C4 /* icon_light_foto@2x.png in Resources */,
