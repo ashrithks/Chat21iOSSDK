@@ -1,5 +1,6 @@
 Pod::Spec.new do |s|
 
+
 s.platform = :ios
 s.ios.deployment_target = '10.0'
 s.name = "Chat21"
